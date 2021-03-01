@@ -52,7 +52,7 @@ Target = input(colored("Enter website url :\n","blue"))
 def find():
     for i in range(1,number):
         print(i)
-        site = requests.get("https://www.toplearn.com" +"/"+ flat_list[i])
+        site = requests.get(Target +"/"+ flat_list[i])
         # print(site.url)
         check = site.status_code
         print("this web is ==> ",site.url,colored(check,"yellow"))
